@@ -45,21 +45,3 @@ for pincode in pincodes:
 
 for receiver in RECEIVER_EMAILS:
     notifier.send_message(vaccine_details=vaccine_by_pincode, receiver_email=receiver)
-
-'''
-for center in response.get('centers'):
-    for session in center.get('sessions'):
-        if session['min_age_limit'] >= 18:
-            if center['fee_type'] == "Paid":
-                if 'vaccine_fees' in center:
-                    for fee_list in center['vaccine_fees']:
-                        t.add_row(
-                            [center['name'], str(center['pincode']), center['fee_type'], str(session['min_age_limit']),
-                             session['vaccine'],
-                             session['date'], session['available_capacity'], str(fee_list.get('fee'))])
-
-            else:
-                t.add_row([center['name'], str(center['pincode']), center['fee_type'], str(session['min_age_limit']),
-                           session['vaccine'],
-                           session['date'], session['available_capacity'], "Free"])
-'''
