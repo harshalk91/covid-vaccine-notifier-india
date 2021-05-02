@@ -1,5 +1,4 @@
 import requests
-from prettytable import PrettyTable
 import datetime
 import notifier
 
