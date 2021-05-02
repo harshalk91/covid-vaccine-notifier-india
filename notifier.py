@@ -74,6 +74,7 @@ HTML = """
           <th>Date</th>
           <th>Available Capacity</th>
           <th>Fees</th>
+          <th>Slots</th>
         </tr>
       </thead>
       <tbody>
